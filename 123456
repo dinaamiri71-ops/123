@@ -1,0 +1,70 @@
+cd ~/dinaamiri71-ops.github.io/my-site3 && cat > content/_index.md << 'EOF'
+---
+title: "Амири Дина"
+# Ваше фото (положите avatar.jpg в папку assets/media/)
+# image: "avatar.jpg"
+---
+
+# Амири Дина
+
+Студентка, изучаю Linux и программирование
+
+---
+
+## Биография
+
+Меня зовут Дина. Учусь на программиста, люблю Linux и open source.
+
+---
+
+## Интересы
+
+- Linux  
+- Python  
+- Git  
+- DevOps
+
+---
+
+## Образование
+
+Университет, Информатика, 2025 — настоящее время
+
+---
+
+## Моя неделя
+
+На этой неделе я сделала лабораторную работу по Linux и создала этот сайт.
+
+---
+
+## Git и CI/CD
+
+Git — система контроля версий.  
+GitHub Pages — бесплатный хостинг статических сайтов.
+EOF
+cat > assets/css/custom.css << 'EOF'
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fafafa;
+  color: #333;
+}
+h1, h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+EOF
+echo 'customCSS = ["css/custom.css"]' >> hugo.toml
+git add . && git commit -m "Улучшен внешний вид сайта" && git push
