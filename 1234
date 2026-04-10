@@ -1,1 +1,2 @@
 cd ~/dinaamiri71-ops.github.io/my-site3 && git add . && git commit -m "Этап 3: навыки, опыт, достижения, посты" && git push
+cd ~/dinaamiri71-ops.github.io/my-site3 && git add . && git commit -m "Этап 3" && git push
