@@ -1,0 +1,125 @@
+cd ~/dinaamiri71-ops.github.io/my-site3 && cat > content/skills.md << 'EOF'
++++
+widget = "featurette"
+headless = true
+active = true
+weight = 30
+title = "Навыки"
+subtitle = ""
+
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "Средний уровень"
+
+[[feature]]
+  icon = "git-alt"
+  icon_pack = "fab"
+  name = "Git"
+  description = "Работа с репозиториями"
+
+[[feature]]
+  icon = "html5"
+  icon_pack = "fab"
+  name = "HTML/CSS"
+  description = "Базовая верстка"
+
+[[feature]]
+  icon = "linux"
+  icon_pack = "fab"
+  name = "Linux"
+  description = "Fedora, терминал"
+EOF
+cat > content/experience.md << 'EOF'
++++
+widget = "experience"
+headless = true
+active = true
+weight = 40
+title = "Опыт"
+subtitle = ""
+
+date_format = "2006"
+
+[[experience]]
+  title = "Учебная практика"
+  company = "РУДН"
+  location = "Москва"
+  date_start = "2025-06-01"
+  date_end = "2025-08-01"
+  description = "Работа с Hugo и GitHub Pages"
+
+[[experience]]
+  title = "Стажер"
+  company = "IT-компания"
+  location = "Удаленно"
+  date_start = "2026-01-01"
+  date_end = ""
+  description = "Изучение Git, работа в команде"
+EOF
+cat > content/accomplishments.md << 'EOF'
++++
+widget = "accomplishments"
+headless = true
+active = true
+weight = 50
+title = "Достижения"
+subtitle = ""
+
+date_format = "2006"
+
+[[item]]
+  organization = "Stepik"
+  title = "Git для начинающих"
+  date_start = "2026-02-01"
+  description = "Сертификат"
+
+[[item]]
+  organization = "Stepik"
+  title = "Веб-разработка"
+  date_start = "2026-01-15"
+  description = "HTML, CSS, Hugo"
+
+[[item]]
+  organization = "РУДН"
+  title = "Хакатон"
+  date_start = "2025-11-10"
+  description = "Участие"
+EOF
+cat > content/posts/week3.md << 'EOF'
+---
+title: "Неделя 3: добавление достижений"
+date: 2026-03-21
+---
+
+## Что сделано
+
+- Добавлены навыки (Python, Git, Linux)
+- Добавлен опыт (практика, стажировка)
+- Добавлены достижения (сертификаты, хакатон)
+
+## Результат
+
+Сайт теперь содержит полную информацию обо мне.
+EOF
+cat > content/posts/markdown.md << 'EOF'
+---
+title: "Язык разметки Markdown"
+date: 2026-03-21
+---
+
+## Что такое Markdown
+
+Легковесный язык разметки для текста.
+
+## Примеры
+
+**Жирный текст**  
+*Курсив*  
+
+- Список  
+- Пункты  
+
+```python
+print("Hello")
